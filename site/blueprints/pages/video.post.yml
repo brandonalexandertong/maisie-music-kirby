@@ -1,0 +1,52 @@
+# Each page blueprint must have a title, the title may be different from the file name
+title: Video Post
+
+num: date
+
+# Each page can have an icon that is shown in page listings when no preview image is available.
+icon: 🖼
+
+status:
+  draft:
+    label: Draft
+    text: The note is still in draft mode. It can only be seen by editors with panel access.
+  unlisted:
+    label: In Review
+    text: The note is online and can be visited with the direct URL. The team must still give the final go to publish it.
+  listed:
+    label: Published
+    text: The note is online and listed in the blog
+
+
+
+# Here we define an info section and a pages section (`photography`)
+
+
+
+sections:
+  meta:
+    type: fields
+    fields:
+      # If you need the same field in multiple locations, you can define them once and reuse whereever needed.
+      # Here we use a files field defined in `/site/blueprints/field/cover.yml`
+      date:
+        type: date
+        display: MMM DD YYYY
+        default: now
+      author:
+        type: users
+      # Fields types can be added using the shortcut `fieldname: true`
+      # (however, you can only use a fieldname once per page and this only makes sense for simple fields without configuration)
+      tags: true
+  content:
+    type: fields
+    fields:
+      videolink:
+          type: url
+          width: 1/2
+        gap:
+          width: 1/2
+      imagecaption:
+        label: Image Caption
+        type: textarea
+        width: 1/2

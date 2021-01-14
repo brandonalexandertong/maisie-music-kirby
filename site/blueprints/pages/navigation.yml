@@ -1,0 +1,32 @@
+# Each page blueprint must have a title, the title may be different from the file name
+title: Header Navigation
+
+# Each page can have an icon that is shown in page listings when no preview image is available.
+icon: 🏠
+
+options:
+  delete: false
+  changeStatus: false
+
+# We use tabs here to focus on the layout in one tab
+# and have the additional contact fields in a secondary
+# tab. Tabs can really help to clean up the interface
+# when it otherwise gets too complicated
+sections:
+  content:
+    type: fields
+    fields:
+      musiclink:
+        label: Music
+        type: url
+      merchlink:
+        label: Merch
+        type: url
+      inquiries:
+        label: Inquiries Copy
+        type: text
+        placeholder: For all inquiries email
+      mailing:
+        label: Mailing Copy
+        type: text
+        placeholder: Join my mailing list

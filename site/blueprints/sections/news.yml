@@ -1,0 +1,12 @@
+type: pages
+headline: News
+parent: kirby.page("news")
+info: "{{ page.published }}"
+layout: cards
+empty: No stories yet
+sortBy: date desc
+limit: 20
+image:
+  query: page.image
+  cover: true
+  ratio: 3/2
