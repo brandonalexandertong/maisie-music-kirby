@@ -6,7 +6,7 @@ icon: 🔗
 
 options:
   delete: false
-  changeStatus: false
+  
 
 
 # We use tabs here to focus on the layout in one tab
